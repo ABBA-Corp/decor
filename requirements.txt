@@ -1,4 +1,4 @@
 django
 djangorestframework
 pillow 
-pip install django-cors-headers
+django-cors-headers
