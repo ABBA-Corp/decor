@@ -20,7 +20,7 @@ class Category(models.Model):
 	image = models.ImageField(upload_to = 'media/slider', blank = True)
 
 class Products(models.Model):
-	category_id = models.ForeignKey('Category', on_delete = models.CASCADE)
+	category_id = models.ForeignKey('Category', on_delete = models.CASCADE, blank = True)
 	price = models.CharField(max_length = 100, blank = True)
 	size = models.CharField(max_length = 100, blank = True)
 	name_uz = models.CharField(max_length = 1000, blank = True)
