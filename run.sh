@@ -1,1 +1,1 @@
-sudo python3 manage.py runserver 0.0.0.0:80
+sudo gunicorn --bind 0.0.0.0:80 decor.wsgi --daemon
