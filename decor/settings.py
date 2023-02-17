@@ -9,7 +9,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['http://43.207.177.98/', 'http://localhost:3000/', 'http://localhost:8000/']
 
 CORS_ALLOW_ALL_ORIGINS = True
 
