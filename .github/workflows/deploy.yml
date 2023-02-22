@@ -37,7 +37,7 @@ jobs:
         script_stop: true
         script: |
           git --work-tree=/home/backend/decor --git-dir=/home/backend/decor/.git clean -f .
-          /home/backend/decor/venv/bin/pip install -r /home/backend/decor/requirements/production.txt
+          /home/backend/decor/venv/bin/pip install -r /home/backend/decor/production.txt
           /home/backend/decor/venv/bin/python /home/backend/decor/manage_prod.py migrate
           systemctl restart decor.service
           sh /home/devops/decor_back.sh "${{ github.event.head_commit.message }}"
