@@ -15,8 +15,8 @@ class CategoryView(viewsets.ModelViewSet):
     permission_classes = [permissions.AllowAny]
 
 class ProductView(viewsets.ModelViewSet):
-    queryset = Products.objects.all()
-    serializer_class = ProductsSerializer
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
     permission_classes = [permissions.AllowAny]
 
 class FAQView(viewsets.ModelViewSet):

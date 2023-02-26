@@ -12,9 +12,9 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = '__all__'
 
-class ProductsSerializer(serializers.ModelSerializer):    
+class ProductSerializer(serializers.ModelSerializer):    
     class Meta:
-        model = Products
+        model = Product
         fields = '__all__'
 
 class FAQSerializer(serializers.ModelSerializer):    
