@@ -36,6 +36,7 @@ class Product(models.Model):
 	description_ru = models.CharField(max_length = 10000, blank = True)
 	description_en = models.CharField(max_length = 10000, blank = True)
 	image = models.ImageField(upload_to = 'media/slider', blank = True)
+	image1 = models.ImageField(upload_to = 'media/slider', blank = True)
 
 	def __str__(self):
 		return self.name_uz
